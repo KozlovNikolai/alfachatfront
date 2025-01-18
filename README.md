@@ -1,41 +1,36 @@
-# Smack Chat (smackchatpkg)
+# Chat
 
-A Smack Chat project
+A Chat project
+
+## Choice node version
+```bash
+nvm use 18
+```
 
 ## Install the dependencies
 ```bash
-yarn
-# or
-npm install
+yarn install
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+yarn quasar dev
 ```
 
+# To run the built application.
 
-### Lint the files
+### Install http server
 ```bash
-yarn lint
-# or
-npm run lint
+yarn add serve
 ```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
 
 ### Build the app for production
 ```bash
-quasar build
+yarn build
 ```
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+### Run chat
+```bash
+yarn serve -s dist/spa -l 9000 -C
+```
+
